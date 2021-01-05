@@ -22,10 +22,10 @@ jobs:
         node-version: '12'
         check-latest: true
     
-    - name: yarn install
+    - name: Run yarn install
       uses: bahmutov/npm-install@v1
 
-    - name: tools/test --full
+    - name: Run tools/test
       run: TERM=dumb tools/test --full
 
-    - run: tools/verify-webview-js
+    - run: Run tools/verify-webview-js
