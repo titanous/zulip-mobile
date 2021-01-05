@@ -1,4 +1,4 @@
-name: zulip-mobile CI
+name: CI
 
 on: [push, pull_request]
 
@@ -28,4 +28,4 @@ jobs:
     - name: Run tools/test
       run: TERM=dumb tools/test --full
 
-    - run: Run tools/verify-webview-js
+    - run: tools/verify-webview-js
